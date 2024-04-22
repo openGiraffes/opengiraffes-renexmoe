@@ -4,6 +4,10 @@ module.exports = {
     "src/html": "/",
     "src/js": "/renexmoe_assets/js",
     "src/css": "/renexmoe_assets/css",
+    "src/fonts": {
+      url: "/css/fonts",
+      static: true,
+    },
     //"./package.json":"/renexmoe_assets/package.json",
   },
   plugins: [

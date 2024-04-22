@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Product Sans";
   src: local("Product Sans Regular"), local("Google Sans Regular"),
-    url(https://cdn.jsdelivr.net/gh/186526/jsdelivr@1.1.8/static/ProductSans-Regular.woff2)
+    url(fonts/ProductSans-Regular.woff2)
       format("woff2");
 }
 

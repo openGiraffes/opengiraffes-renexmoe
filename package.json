@@ -8,7 +8,7 @@
     "format": "prettier --write \"*[^build]/**/*[^prod][^bundle].@(css|js|html|json)\"",
     "clean": "rm -rf ./dist/ ./build/ ./src/html",
     "dev": "npm run clean;gulp html;snowpack dev",
-    "build": "npm run clean;npm run build:html;snowpack build;node build.cjs",
+    "build": "npm run build:html && snowpack build && node build.cjs",
     "build:html": "gulp html",
     "prod:vercel": "npm run clean;vercel --prod",
     "prod:jsd": "npm run build;bash publish.sh"
@@ -40,7 +40,6 @@
     "snowpack": "^3.0.11",
     "source-map-explorer": "^2.5.2"
   },
-  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3",
   "sideEffects": false,
   "browserslist": [
     "Chrome 40",
